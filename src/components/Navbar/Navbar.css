@@ -2,7 +2,11 @@
   --bg-navbar-color: rgba(0, 0, 0, 0.1);
   --light-primary-color: #a993fe;
   --primary-color: #7e61e7;
-  --gradient-color: linear-gradient(90deg, var(--light-primary-color) 0%, var(--primary-color) 100%);
+  --gradient-color: linear-gradient(
+    90deg,
+    var(--light-primary-color) 0%,
+    var(--primary-color) 100%
+  );
   --light-color: #ffffff;
   --dark-color: #000000;
   --text-font-size: 0.9rem;
@@ -78,7 +82,7 @@
   padding: 0.6rem 2rem;
   border: none;
   outline: 1.5px solid transparent;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -87,4 +91,50 @@
   color: var(--light-primary-color);
   background: var(--dark-color);
   outline: 1.5px solid var(--light-primary-color);
+}
+
+.nav__menu-btn {
+  background: var(--gradient-color);
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--light-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  font-size: 1.5;
+  height: 2.5rem;
+  line-height: 0;
+  transition: all 0.4s ease;
+  width: 2.5rem;
+}
+
+.nav__menu-btn:hover {
+  background: var(--dark-color);
+  border: 1px solid var(--light-primary-color);
+  color: var(--light-primary-color);
+}
+
+@media (max-width: 425px) {
+  .nav__logo {
+    height: auto;
+    width: 16rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .nav__menu-btn {
+    display: block;
+  }
+
+  .nav__list {
+    display: none;
+  }
+}
+
+@media (max-width: 1325px) {
+  .nav {
+    padding: 0 2rem;
+  }
 }

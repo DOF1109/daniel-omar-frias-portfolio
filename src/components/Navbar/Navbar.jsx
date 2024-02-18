@@ -1,17 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/daniel-omar-frias.png";
+import { ReactComponent as MenuIcon } from "../../assets/menu_icon.svg";
 
 const Navbar = () => {
   return (
     <>
       <nav className="nav">
         <div className="nav__content">
-          <img
-            className="nav__logo"
-            src={logo}
-            alt="Daniel Omar Frias"
-          />
+          <img className="nav__logo" src={logo} alt="Daniel Omar Frias" />
           <ul className="nav__list">
             <li>
               <a href="" className="nav__item">
@@ -38,6 +35,10 @@ const Navbar = () => {
               Contrátame
             </button>
           </ul>
+
+          <button className="nav__menu-btn" onClick={() => {}}>
+            <MenuIcon className="nav__menu-icon" />
+          </button>
         </div>
       </nav>
     </>
