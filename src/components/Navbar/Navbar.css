@@ -1,0 +1,90 @@
+:root {
+  --bg-navbar-color: rgba(0, 0, 0, 0.1);
+  --light-primary-color: #a993fe;
+  --primary-color: #7e61e7;
+  --gradient-color: linear-gradient(90deg, var(--light-primary-color) 0%, var(--primary-color) 100%);
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --text-font-size: 0.9rem;
+  --text-font-weight: 500;
+}
+
+.nav {
+  background: var(--bg-navbar-color);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+}
+
+.nav__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 1rem 0;
+}
+
+.nav__logo {
+  height: auto;
+  width: 20rem;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.nav__item {
+  color: var(--light-color);
+  /* cursor: pointer; */
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  position: relative;
+  text-decoration: none;
+}
+
+/* Animación de subrayado */
+.nav__item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: var(--gradient-color);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+.nav__item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.nav__contact-btn {
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  background: var(--gradient-color);
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: .2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav__contact-btn:hover {
+  color: var(--light-primary-color);
+  background: var(--dark-color);
+  outline: 1.5px solid var(--light-primary-color);
+}

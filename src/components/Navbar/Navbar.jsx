@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import logo from "../../assets/daniel-omar-frias.png";
 
 const Navbar = () => {
   return (
@@ -8,8 +9,8 @@ const Navbar = () => {
         <div className="nav__content">
           <img
             className="nav__logo"
-            src="../../assets/daniel-omar-frias.png"
-            alt="Logo"
+            src={logo}
+            alt="Daniel Omar Frias"
           />
           <ul className="nav__list">
             <li>
