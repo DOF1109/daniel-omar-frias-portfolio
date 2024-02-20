@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/daniel-omar-frias.png";
-import { ReactComponent as MenuIcon } from "../../assets/menu_icon.svg";
+import MenuIcon from "../Icons/MenuIcon";
 
 const Navbar = () => {
   return (
@@ -37,7 +37,7 @@ const Navbar = () => {
           </ul>
 
           <button className="nav__menu-btn" onClick={() => {}}>
-            <MenuIcon className="nav__menu-icon" />
+            <MenuIcon className="icon" />
           </button>
         </div>
       </nav>

@@ -116,6 +116,10 @@
   color: var(--light-primary-color);
 }
 
+.icon {
+    color: var(--primary-color);
+}
+
 @media (max-width: 425px) {
   .nav__logo {
     height: auto;
