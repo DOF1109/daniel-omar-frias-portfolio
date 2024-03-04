@@ -1,0 +1,14 @@
+:root {
+  --bg-navbar-color: rgba(0, 0, 0, 0.1);
+  --light-primary-color: #a993fe;
+  --primary-color: #7e61e7;
+  --gradient-color: linear-gradient(
+    90deg,
+    var(--light-primary-color) 0%,
+    var(--primary-color) 100%
+  );
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --text-font-size: 0.9rem;
+  --text-font-weight: 500;
+}

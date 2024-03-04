@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/variables.css"
 import "./Navbar.css";
 import logo from "../../assets/daniel-omar-frias.png";
 import MenuIcon from "../Icons/MenuIcon";
