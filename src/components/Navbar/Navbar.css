@@ -17,7 +17,7 @@
 
 .nav__logo {
   height: auto;
-  width: 20rem;
+  width: 17rem;
 }
 
 .nav__list {
@@ -30,7 +30,6 @@
 
 .nav__item {
   color: var(--light-color);
-  /* cursor: pointer; */
   font-size: var(--text-font-size);
   font-weight: var(--text-font-weight);
   position: relative;
@@ -107,12 +106,15 @@
 
 @media (max-width: 425px) {
   .nav__logo {
-    height: auto;
-    width: 16rem;
+    max-width: 70%;
   }
 }
 
 @media (max-width: 769px) {
+  .nav__logo {
+    max-width: 60%;
+  }
+
   .nav__menu-btn {
     display: block;
   }

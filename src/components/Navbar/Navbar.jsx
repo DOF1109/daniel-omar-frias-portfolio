@@ -1,12 +1,22 @@
 import React from "react";
-import "../../styles/variables.css"
+import "../../styles/variables.css";
 import "./Navbar.css";
 import logo from "../../assets/daniel-omar-frias.png";
 import MenuIcon from "../Icons/MenuIcon";
+import { useState } from "react";
+import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <>
+      <MobileNavbar isOpen={openMenu} toggleMenu={toggleMenu} />
+
       <nav className="nav">
         <div className="nav__content">
           <img className="nav__logo" src={logo} alt="Daniel Omar Frias" />
@@ -37,8 +47,9 @@ const Navbar = () => {
             </button>
           </ul>
 
-          <button className="nav__menu-btn" onClick={() => {}}>
+          <button className="nav__menu-btn" onClick={toggleMenu}>
             <MenuIcon className="icon" />
+            {openMenu ? "close" : "menu"}
           </button>
         </div>
       </nav>
