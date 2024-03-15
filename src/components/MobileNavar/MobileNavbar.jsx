@@ -13,27 +13,27 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
           <img className="logo" src={logo} alt="Daniel Omar Frias" />
           <ul>
             <li>
-              <a href="" className="mobile-menu__item">
+              <a href="" className="nav__item">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="" className="mobile-menu__item">
+              <a href="" className="nav__item">
                 Habilidades
               </a>
             </li>
             <li>
-              <a href="" className="mobile-menu__item">
+              <a href="" className="nav__item">
                 Experiencia
               </a>
             </li>
             <li>
-              <a href="" className="mobile-menu__item">
+              <a href="" className="nav__item">
                 Contáctame
               </a>
             </li>
 
-            <button className="mobile-menu__contact-btn" onClick={() => {}}>
+            <button className="nav__contact-btn" onClick={() => {}}>
               Contrátame
             </button>
           </ul>

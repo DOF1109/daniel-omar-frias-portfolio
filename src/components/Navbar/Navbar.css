@@ -38,42 +38,42 @@
 
 /* Animación de subrayado */
 .nav__item::before {
-  content: " ";
-  width: 2rem;
-  height: 0.2rem;
   background: var(--gradient-color);
   border-radius: 0.5rem;
-  position: absolute;
   bottom: -0.6rem;
+  content: " ";
+  height: 0.2rem;
   opacity: 0;
+  position: absolute;
   transform: translateX(-1.5rem);
   transition: var(--transition);
+  width: 2rem;
 }
 .nav__item:hover::before {
-  width: 100%;
-  transform: translateX(0);
   opacity: 1;
+  transform: translateX(0);
+  width: 100%;
 }
 
 .nav__contact-btn {
-  font-size: var(--text-font-size);
-  font-weight: var(--text-font-weight);
+  background: var(--gradient-color);
+  border: none;
+  border-radius: 0.2rem;
+  color: var(--light-color);
+  cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
   justify-content: center;
-  color: var(--light-color);
-  background: var(--gradient-color);
-  padding: 0.6rem 2rem;
-  border: none;
   outline: 1.5px solid transparent;
-  border-radius: 0.2rem;
-  cursor: pointer;
+  padding: 0.6rem 2rem;
   transition: var(--transition);
 }
 
 .nav__contact-btn:hover {
-  color: var(--light-primary-color);
   background: var(--dark-color);
+  color: var(--light-primary-color);
   outline: 1.5px solid var(--light-primary-color);
 }
 
@@ -85,9 +85,9 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 1.5;
   justify-content: center;
   display: none;
-  font-size: 1.5;
   height: 2.5rem;
   line-height: 0;
   transition: var(--transition);
