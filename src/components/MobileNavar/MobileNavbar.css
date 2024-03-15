@@ -1,0 +1,21 @@
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background: var(--bg-mobile-navbar-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999 !important;
+    opacity: 0;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    transform: translateX(-100vw);
+}
+
+.mobile-menu__container {
+    width: 60vw;
+    height: 100vh;
+    background: var(--secondary-color);
+    padding: 2rem;
+}

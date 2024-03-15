@@ -47,7 +47,7 @@
   bottom: -0.6rem;
   opacity: 0;
   transform: translateX(-1.5rem);
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 .nav__item:hover::before {
   width: 100%;
@@ -68,7 +68,7 @@
   outline: 1.5px solid transparent;
   border-radius: 0.2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .nav__contact-btn:hover {
@@ -90,7 +90,7 @@
   font-size: 1.5;
   height: 2.5rem;
   line-height: 0;
-  transition: all 0.4s ease;
+  transition: var(--transition);
   width: 2.5rem;
 }
 

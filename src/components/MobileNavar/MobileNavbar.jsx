@@ -1,4 +1,5 @@
 import "./MobileNavbar.css";
+import "../../styles/variables.css";
 import logo from "../../assets/daniel-omar-frias.png";
 
 const MobileNavbar = ({ isOpen, toggleMenu }) => {

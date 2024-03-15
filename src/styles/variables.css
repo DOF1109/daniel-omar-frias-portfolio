@@ -1,14 +1,18 @@
 :root {
   --bg-navbar-color: rgba(0, 0, 0, 0.1);
-  --light-primary-color: #a993fe;
+  --bg-mobile-navbar-color: rgba(0, 0, 0, 0.3);
   --primary-color: #7e61e7;
+  --light-primary-color: #a993fe;
+  --secondary-color: #342864;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
+  --transition: all 0.3s ease;
   --gradient-color: linear-gradient(
     90deg,
     var(--light-primary-color) 0%,
     var(--primary-color) 100%
-  );
-  --light-color: #ffffff;
-  --dark-color: #000000;
+    );
   --text-font-size: 0.9rem;
   --text-font-weight: 500;
 }

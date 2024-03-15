@@ -4,7 +4,7 @@ import "./Navbar.css";
 import logo from "../../assets/daniel-omar-frias.png";
 import MenuIcon from "../Icons/MenuIcon";
 import { useState } from "react";
-import MobileNavbar from "../MobileNavbar/MobileNavbar";
+import MobileNavbar from "../MobileNavar/MobileNavbar";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
